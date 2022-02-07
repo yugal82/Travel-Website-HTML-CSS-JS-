@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!--Custom CSS link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome 6 Beta CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!--Font Awesome 4.7 version CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <!--Swiper JS CDN link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!--Navbar section starts-->
+
+    <header class="navbar">
+        <a href="" class="logo"><i class="fa fa-plane"></i>TRVL.</a>
+        <div class="navbar-menu">
+            <i id="close-btn" class="fa fa-times"></i>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#packages">packages</a></li>
+            <li><a href="#contact">contact us</a></li>
+        </div>
+        <div class="icons">
+            <div id="menu-btn"><i class="fa fa-bars"></i></div>
+            <a href=""><i class="fa fa-shopping-cart"></i></a>
+            <div id="search-btn"><i class="fa fa-search"></i></div>
+        </div>
+    </header>
+
+    <!--Navbar section ends-->
+
+    <!--Search btn/form start -->
+
+    <div class="search-form">
+        <div id="close-search"><i class="fa fa-times"></i></div>
+
+        <form action="">
+            <input type="search" placeholder="  search here..." id="search-box">
+            <label for="search-box"><i id="close-search" class="fa fa-search"></i></label>
+        </form>
+    </div>
+
+    <!--Search btn/form end -->
+
+
+    <!--Home section start-->
+
+    <section class="home " id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                        <div class="content">
+                            <span>never stop</span>
+                            <h3>exploring.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, doloremque omnis
+                                ipsam perspiciatis nulla nostrum fugit minus nihil suscipit voluptatum!</p>
+                            <a href="" class="btn">book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                        <div class="content">
+                            <span>make tour</span>
+                            <h3>memorable.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, doloremque omnis ipsam
+                                perspiciatis nulla nostrum fugit minus nihil suscipit voluptatum!</p>
+                            <a href="" class="btn">book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                        <div class="content">
+                            <span>explore the</span>
+                            <h3>new world.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, doloremque omnis ipsam
+                                perspiciatis nulla nostrum fugit minus nihil suscipit voluptatum!</p>
+                            <a href="" class="btn">book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!--Home section end-->
+
+
+    <!-- Category section start -->
+
+    <section class="category" id="category">
+        <h1 class="heading">adventure idea!</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/category-1.jpg" alt="">
+                <h3>bungee jumping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dicta!</p>
+                <a href="" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/category-2.jpg" alt="">
+                <h3>zip lining</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dicta!</p>
+                <a href="" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/category-3.jpg" alt="">
+                <h3>canoeing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dicta!</p>
+                <a href="" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/category-4.jpg" alt="">
+                <h3>kayaking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dicta!</p>
+                <a href="" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Category section end -->
+
+    <!-- About section start-->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>memorable outdoor experience</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eligendi tempore veritatis maiores
+                molestias? Laborum incidunt aliquid et vero quidem fugiat culpa, exercitationem magnam aspernatur
+                voluptates doloremque assumenda veniam totam?</p>
+            <a href="" class="btn">read more</a>
+        </div>
+    </section>
+
+
+    <!-- About section end-->
+
+    <!-- services section starts-->
+
+    <section class="services" id="services">
+        <h1 class="heading">what we offer </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/serv-1.png" alt="">
+                <h3>complete guide</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="images/serv-2.png" alt="">
+                <h3>custom packages</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="images/serv-3.png" alt="">
+                <h3>family trips</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="images/serv-4.png" alt="">
+                <h3>train guides</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="images/serv-5.png" alt="">
+                <h3>adventure trails</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <img src="images/serv-6.png" alt="">
+                <h3>various adventures</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus?</p>
+                <a href="" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- services section ends-->
+
+
+    <!-- Shop section starts -->
+
+    <section class="shop" id="shop">
+        <h1 class="heading">featured products</h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <!--
+                    <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-1.jpg" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-2.jpg" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-3.JPG" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-4.JPG" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/product-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="" class="fa fa-shopping-cart"></a>
+                            <a href="" class="fa fa-eye"></a>
+                            <a href="" class="fa fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>survival kits</h3>
+                        <div class="price">$5.00 - $25.00</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <!-- Shop section ends -->
+
+    <!-- Packages section start-->
+
+    <section class="packages" id="packages">
+        <div class="heading">popular packages</div>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>featured tour packages</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, voluptatum!</p>
+                    <div class="price">$250-$450</div>
+                    <a href="" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Packages section end-->
+
+
+
+
+    <!-- Newsletter section starts -->
+
+    <section class="newsletter">
+        <div class="content">
+            <h1 class="heading">
+                subscribe us
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere dolore impedit adipisci ex delectus
+                tempore consectetur ea, incidunt praesentium sed.</p>
+            <form action="">
+                <input type="email" placeholder="Email" class="email">
+                <input type="submit" value="subscirbe" class="btn">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Newsletter section ends -->
+
+    <!-- Footer section starts -->
+
+    <section class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#shop">shop</a>
+                <a href="#packages">packages</a>
+                <a href="#contact">contact us</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href=""><i class="fa fa-phone"></i>+91 72195 29888</a>
+                <a href=""><i class="fa fa-phone"></i>+91 99769 45654</a>
+                <a href=""><i class="fa fa-envelope"></i>trvl@gmail.com</a>
+                <a href=""><i class="fa fa-map-marker"></i>Pune | India</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href=""><i class="fa fa-instagram"></i>Instagram</a>
+                <a href=""><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+                <a href="" class="logo"><i class="fa fa-plane"></i>TRVL.</a>
+            </div>
+        </div>
+        <div class="credits">
+            All rights reserved | Copyrights 2022 | TRVL
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS File link for Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS file link -->
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>

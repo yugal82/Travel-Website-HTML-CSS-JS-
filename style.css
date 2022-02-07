@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+:root{
+    --green: #219150;
+    --black: #10221b;
+    --white: #fff;
+    --light-bg: #eee;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem .1rem rgba(0,0,0,.1);
+}
+
+/*Grid
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(val,1fr));
+    gap:1.5rem;
+*/
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--black);
+}
+
+
+.btn{
+    display: inline-block;
+    font-size: 2.5rem;
+    color: var(--white);
+    background-color: var(--green);
+    padding: .5rem 1.2rem;
+    border-radius: .5rem;
+}
+
+.heading{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 4rem;
+    color: var(--black);
+}
+/*Navbar css starts*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: var(--green);
+}
+.navbar .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+.navbar .logo i{
+    color: var(--black);
+    margin-right: .5rem;
+    font-size: 4rem;
+}
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-menu li{
+    list-style-type: none;
+}
+.navbar-menu li a{
+    margin: 0 1.3rem ;
+    font-size: 2rem;
+    color: var(--black);
+}
+.navbar-menu li a:hover{
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+.navbar-menu .fa-times{
+    font-size: 4rem;
+    color: var(--black);
+    display: none;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons a, .icons div{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+#menu-btn{
+    display: none;
+}
+
+/*Navbar CSS end*/
+
+
+.search-form{
+    position: fixed;
+    top: -110%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+.search-form.show{
+    top: 0;
+}
+
+#close-search .fa-times{
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    color: var(--white);
+    font-size: 4rem;
+    cursor: pointer;
+}
+#close-search .fa-times:hover{
+    color: var(--green);
+}
+
+.search-form form {
+    width: 70rem;
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+    border-bottom: .2rem solid var(--white);
+    display: flex;
+    align-items: center;
+}
+.search-form form input{
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    text-transform: none;
+    background: none;
+    color: var(--green);
+
+}
+
+.search-form form .fa-search{
+    position: relative;
+    right: 110%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+}
+.search-form form .fa-search:hover{
+    color: var(--green);
+}
+
+/* Home Section CSS start */
+
+.home{
+    margin-top: 8rem ;
+}
+.home .box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+}
+.home .second{
+    justify-content: flex-start;
+}
+.home .content{
+    width: 50rem;
+    font-size: 4rem;
+    color: var(--green);
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+    font-weight: bold;
+}
+.content h3{
+    font-size: 4rem;
+}
+.content span{
+    color: var(--black);
+}
+
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: rgb(53, 52, 52);
+}
+
+/* Home Section CSS end */
+
+
+/* Category section CSS start*/
+
+.category .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(29rem,1fr));
+    gap:1.5rem;
+}
+.category .box-container .box{
+    text-align: center;
+    padding: 2rem;
+}
+.category .box-container .box img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1%;
+}
+
+.category .box-container .box h3{
+    font-size: 2rem;
+    color: var(--green);
+}
+
+.category .box-container .box p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.category .box-container .box .btn{
+    padding:0 1rem;
+    font-size: 2rem;
+}
+
+
+
+/* Category section CSS end*/
+
+
+/* About section CSS start */
+.about{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .image{
+    flex: 1 1 42rem;
+    padding: 5rem;
+}
+.about .image img{
+    width: 100%;
+    box-shadow: 4rem 4rem 0 rgba(0,0,0,.1);
+}
+
+.about .content{
+    flex: 1 1 42rem;
+    color: var(--green);
+}
+.about .content h3{
+    font-size: 3rem;
+    color: var(--green);
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 1.8;
+}
+
+.about .content .btn{
+    padding:0 1rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+/* About section CSS end */
+
+
+/* Shop section CSS start */
+.shop{
+    margin: 1rem 0;
+}
+.shop .slide{
+    width: 35rem;
+    border: var(--border);
+    padding: 2rem;
+}
+.shop .slide .image{
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    width: 100%;
+}
+.shop .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .slide .image .icons{
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    left: -1rem;
+    text-align: center;
+}
+.shop .slide .image .icons a{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    background: var(--black);
+    color: var(--white);
+}
+.shop .slide .image .icons a:hover{
+    background: var(--green);
+}
+
+.shop .content{
+    padding: 1rem 0;
+    text-align: center;
+}
+.shop .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.shop .content .price{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: var(--green);
+}
+.shop .content .stars i{
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+
+/* Shop section CSS end */
+
+
+/* Packages section CSS end */
+
+.packages{
+    padding: .5rem 2rem;
+}
+.packages .heading{
+    margin-top: 2   rem;
+}
+.packages .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(32rem,1fr));
+    gap:1.5rem;
+}
+
+.packages .box-container .box{
+    text-align: center;
+    background: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+
+}
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .content{
+    padding: 2rem;
+}
+.packages .box-container .box .content h3{
+    font-size: 1.7rem;
+    color: var(--black);
+}
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 1.8;
+}
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+.packages .box-container .box .content .btn{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.packages .box-container .box .content .btn:hover{
+    background: var(--white);
+    color: var(--green);
+}
+
+
+
+/* Packages section CSS end */
+
+/* Services section CSS starts */
+.services{
+    padding: 1rem 2rem
+}
+.services .heading{
+    font-size: 4rem;
+}
+.services .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(32rem,1fr));
+    gap:1.5rem;
+}
+
+.services .box-container .box{
+    text-align: center;
+    background: var(--white);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.services .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+.services .box-container .box p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: .5rem 0;
+}
+.services .box-container .box .btn{
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    line-height: 2;
+    color: var(--white);
+}
+
+.services .box-container .box .btn:hover{
+    color: var(--green);
+    background-color: var(--white);
+}
+/* Services section CSS ends */
+
+/* Newsletter section CSS starts */
+
+.newsletter{
+    padding: 1rem 2rem;
+    background: var(--light-bg);
+    margin-top: 5rem;
+}
+.newsletter .content{
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.newsletter .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--black);
+}
+
+.newsletter .content form{
+    margin-top: 2rem;
+    background: var(--light-bg);
+    border-radius: 5rem;
+
+    padding: .7rem;
+    display: flex;
+    flex-flow: column;
+}
+.newsletter .content form .email{
+    width: 70%;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+    border-bottom: var(--border);
+    background: rgba(0,0,0,.8);
+    color: var(--white);
+    border-radius: 5rem;
+    height: 5rem;
+    text-transform: none;
+}
+.newsletter .content form .email:hover{
+    background: var(--white);
+    color: var(--black);
+    border-radius: 5rem;
+}
+.newsletter .content form::placeholder{
+    color: var(--white);
+}
+
+.newsletter .content form .btn{
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background: rgba(0,0,0,.8);
+    cursor: pointer;
+    border-radius: 5rem;
+    color: grey;
+}
+.newsletter .content form .btn:hover{
+    background: var(--white);
+    color: var(--black);
+    border-bottom: var(--border);
+}
+
+
+/* Newsletter section CSS ends */
+
+/* Footer section CSS start */
+
+.footer{
+    padding: 1rem 2rem;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(./images/footer-bg.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(25rem,1fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: var(--white);
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+.footer .box-container .box  .logo{
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    color: var(--white);
+}
+.footer .box-container .box  .logo:hover{
+    color: var(--white);
+}
+.footer .box-container .box  .logo .fa-plane{
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.fa-envelope{
+    text-transform: none;
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+}
+.footer .credits{
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+/* Footer section CSS end */
+
+
+
+
+/*Media queries*/
+ @media(max-width:1200px){
+    .navbar{
+        padding: 2rem;
+    }
+ }
+
+ @media(max-width:991px){
+     html{
+         font-size: 55%;
+     }
+     .home .box{
+         justify-content: center;
+         background-position: right !important;
+     }
+     .home .second{
+        justify-content: center;
+        background-position: left !important;
+     }
+     .content{
+         text-align: center;
+         
+     }
+     .content span{
+         font-size: 3rem;
+     }
+     .content h3{
+         font-size: 4rem;
+     }
+ }
+
+ @media(max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .navbar-menu{
+        position: fixed;
+        top: 0;
+        left: -110%;
+        background: var(--white);
+        z-index: 10000;
+        width: 40rem;
+        height: 100%;
+        display: flex ;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .navbar-menu.active{
+        left: 0;
+        box-shadow:0 0 0 100vw rgba(0,0,0,.8);
+        background-color: var(--green); 
+    }
+    .navbar-menu li{
+        margin: 2.5rem 0;
+    }
+    .navbar-menu li a{
+        font-size: 3rem;
+    }
+    .navbar-menu li a:hover{
+        color: var(--green);
+        border-bottom: 2px solid var(--green);
+    }
+    .navbar-menu .fa-times{
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+        display: none;
+    }
+ }
+
+ @media(max-width:450px){
+     html{
+         font-size: 50%;
+     }
+ }
